@@ -1,0 +1,15 @@
+h2:nth-child(odd) {
+    background-color: rgba(0, 0, 255, 0.377);
+    
+    }
+
+h2:nth-child(even) {
+background-color: rgba(172, 167, 167, 0.623);
+
+}
+
+
+.rates:nth-child(odd) {
+
+    background-color: grey;
+}
