@@ -1,5 +1,28 @@
+
 <h2>Waluty</h2>
-<div *ngFor="let exchanges of exchanges$">
-  <h2>{{exchanges.table}}  - {{exchanges.no}} - {{exchanges.effectiveDate}}</h2>
-  <div *ngFor="let rate of exchanges.rates" class="rates"> <strong>{{rate.currency}}</strong> - <strong>{{rate.code}}</strong> - <strong>{{rate.mid}}</strong> </div>
+<div *ngFor="let exchanges of exchanges$" class="exchanges" class="mainDiv">
+  <h2>Data publikacji :  {{exchanges.effectiveDate}}</h2>
+
+  <table class="mainTable"> 
+    <tr class="mainTableRow">
+      <th class="mainTableRow--Name">Nazwa</th>
+      <th>Kod waluty</th>
+      <th>Wartość</th>
+    </tr>
+    <tr *ngFor="let rate of exchanges.rates" class="mainTableRates">
+      <th><strong>{{rate.currency}}</strong></th>
+      <th><strong>{{rate.code}}</strong></th>
+      <th><strong>{{rate.mid}}</strong></th>
+  </tr>
+  
+  </table> 
+ 
 </div>
+
+
+
+
+
+<!--  -->
+
+

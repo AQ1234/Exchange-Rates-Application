@@ -1,15 +1,38 @@
-h2:nth-child(odd) {
-    background-color: rgba(0, 0, 255, 0.377);
+.mainTable {
+
+  margin: 0 auto;
+    border: 1px black solid;
+  &Row {
+
     
+    font-size: 1.5rem;
+    background-color: rgb(173, 172, 172);
+
+    .mainTableRow--Name {
+
+        width: 2.6rem;
     }
 
-h2:nth-child(even) {
-background-color: rgba(172, 167, 167, 0.623);
+  }
 
+  &Rates {
+
+
+
+    
+    &:nth-child(odd) {
+
+      background-color: #ccc;
+    }
+  }
+
+  th {
+
+    padding: 8px;
+  }
 }
 
+.exchanges {
 
-.rates:nth-child(odd) {
-
-    background-color: grey;
+  text-align: center;
 }
