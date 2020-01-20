@@ -1,28 +1,10 @@
+﻿<!-- nav -->
+<div class="container ">
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+  <div class="collapse navbar-collapse">
+    <button mat-flat-button (click)="logout()">Logout</button>
+  </div>
+</nav>
 
-<h2>Waluty</h2>
-<div *ngFor="let exchanges of exchanges$" class="exchanges" class="mainDiv">
-  <h2>Data publikacji :  {{exchanges.effectiveDate}}</h2>
-
-  <table class="mainTable"> 
-    <tr class="mainTableRow">
-      <th class="mainTableRow--Name">Nazwa</th>
-      <th>Kod waluty</th>
-      <th>Wartość</th>
-    </tr>
-    <tr *ngFor="let rate of exchanges.rates" class="mainTableRates">
-      <th><strong>{{rate.currency}}</strong></th>
-      <th><strong>{{rate.code}}</strong></th>
-      <th><strong>{{rate.mid}}</strong></th>
-  </tr>
-  
-  </table> 
- 
+<router-outlet></router-outlet>
 </div>
-
-
-
-
-
-<!--  -->
-
-

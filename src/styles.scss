@@ -1,16 +1,2 @@
-*,
-*::before,
-*::after {
-
-}
-
-html {
-
-    font-size: 16px;
-}
-body {
-    text-align: center;
-    background-color: #f7f8f7;
-    color: #2b2b2b;
-}
-
+body {  font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '@angular/material/prebuilt-themes/indigo-pink.css';

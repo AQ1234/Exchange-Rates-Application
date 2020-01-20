@@ -1,0 +1,32 @@
+﻿<div class="container">
+  <h2 class="text-center">Hi {{currentUser.firstName}}, {{currentUser.lastName}}!</h2>
+ 
+  <div>
+    <h3 class="text-center">Currency exchange rates</h3>
+
+    <table class="table table-hover table-bordered" *ngFor="let exchanges of exchanges$">
+      <thead class="thead-dark">
+        <tr>
+          <th colspan="4">
+            Data {{exchanges.effectiveDate}}
+          </th>
+        </tr>
+        <tr>
+          <th scope="col">LP</th>
+          <th scope="col">Nazwa waluty</th>
+          <th scope="col">Kod waluty</th>
+          <th scope="col">Wartość waluty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rates of exchanges.rates; let i = index ">
+          <th scope="row">{{i}}</th>
+          <td>{{rates.currency}}</td>
+          <td>{{rates.code}}</td>
+          <td>{{rates.mid}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
