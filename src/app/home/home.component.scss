@@ -1,0 +1,39 @@
+.mainTable {
+    text-align: center;
+    margin: 0 auto;
+      border: 1px black solid;
+    &Row {
+  
+      
+      font-size: 1.5rem;
+      background-color: rgb(173, 172, 172);
+  
+      .mainTableRow--Name {
+  
+          width: 2.6rem;
+      }
+  
+    }
+  
+    &Rates {
+  
+  
+  
+      
+      &:nth-child(odd) {
+  
+        background-color: #ccc;
+      }
+    }
+  
+    th {
+  
+      padding: 8px;
+    }
+  }
+  
+  .exchanges {
+  
+    text-align: center;
+  }
+  
