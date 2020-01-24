@@ -8,14 +8,13 @@ This project was generated with Angular CLI version 8.3.23.
 
 ## Before first start
 
-1. Install NodeJS from https://nodejs.org/en/download/.
-2. In root folder, where is package.json locate, run `npm install` from the command line.
-3. Start the application by running `ng serve`
-4. In your browser input `http://localhost:4200`
+1. Download , or clone repository `https://github.com/AQ1234/Exchange-Rates-Application.git`.
+2. Install NodeJS from https://nodejs.org/en/download/.
+3. In root folder, where is package.json locate, run `npm install` from the command line.
+4. Start the application by running `ng serve`
+5. In your browser input `http://localhost:4200`
 	
 ## Sources 
-
-
 
 To this project I've used additional technologies: 
 1. npm form `https://www.npmjs.com/`\
