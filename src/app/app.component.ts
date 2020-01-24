@@ -1,23 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { Exchange, Rate } from './models/exchange.model';
+﻿import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from './_services/index';
+import { User } from './_models/user';
 
-import { DataService } from './services/data.service'; 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent implements OnInit {
-  exchanges$: Exchange;
-  rates$: Rate
-  title = 'Exchange-Rates-Application';
-  constructor( private dataService: DataService) { 
+@Component({ selector: 'app', 
+templateUrl: 'app.component.html' })
+export class AppComponent  {
+    currentUser: User;
    
-  }
-
-  ngOnInit() {
-    return this.dataService.getExchanges().subscribe(data => this.exchanges$ = data)
-
-}
-
+    constructor(
+        private router: Router,
+        private authenticationService: AuthenticationService
+    ) {
+        this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+      
+    }
+    logout() {
+        this.authenticationService.logout();
+        this.router.navigate(['/login']);
+    }
 }
