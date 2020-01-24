@@ -19,7 +19,7 @@ This project was generated with Angular CLI version 8.3.23.
 
 
 To this project I've used additional technologies: 
-- npm form `https://www.npmjs.com/`  
--Angular CLI   
--Bootstrap from `https://getbootstrap.com/docs/4.4/getting-started/introduction/`  
--Angular formly `https://formly.dev/`  
+1. npm form `https://www.npmjs.com/`\
+2. Angular CLI\
+3. Bootstrap from `https://getbootstrap.com/docs/4.4/getting-started/introduction/`\
+4. Angular formly `https://formly.dev/`\
