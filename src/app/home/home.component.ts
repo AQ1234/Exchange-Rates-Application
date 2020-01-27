@@ -1,8 +1,9 @@
 ﻿import { Component, OnInit, OnDestroy} from '@angular/core';
 import { Subscription } from 'rxjs';
-import { first } from 'rxjs/operators';
-import { User } from '@app/_models/user';
-import { UserService, AuthenticationService, DataService } from '@app/_services/index';
+import { User } from '@app/models/user';
+import { UserService } from '@app/services/user.service';
+import { AuthenticationService  } from '@app/services/authentication.service';
+import { DataService } from '@app/services/data.service';
 
 @Component({
 selector: 'app', 
